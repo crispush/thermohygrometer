@@ -18,6 +18,12 @@
 #define TWEN 2
 #define TWIE 0
 
+#define ERROR_PORT PORTD
+#define ERROR_LED_1 PD1
+#define ERROR_LED_2 PD2
+#define ERROR_LED_3 PD3
+
+
 void twi_init(unsigned char, int);
 void twi_start_condition();
 void twi_start();

@@ -63,7 +63,7 @@ void ERROR(unsigned char data, unsigned char ack){
         delay_microsec(1000);
     }
 
-    PORTD = 14;
+    ERROR_PORT |= (ERROR_LED_1) | (ERROR_LED_2) | (ERROR_LED_3);
 
     switch(TWSR & 0xF8){
         case 0x20:
